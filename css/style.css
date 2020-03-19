@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+}
+.header .img-header{
+    width: 15%;    
+    float: left;
+    margin-top: -2%;
+}
+.header{
+    margin-top: 40px;
+}
+.container ul li{
+    margin-right: 70px;
+}
+.podcasteur{
+    margin-top: 10%;
+    margin-left: 9%;
+}
+.podcasteur .margin{
+    margin-bottom: 30%;
+}
+.podcasteur img{
+    border-radius: 15%;
+    border: 2px solid white;
+}
+@media (max-width: 767px){
+    .podcasteur img{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+}
+@media (max-width: 992px){
+    .podcasteur img{
+        margin-bottom: 20%;
+    }
+}
+.btn-primary{
+    position: relative;
+    left: 31%;
+    top: 100px;
+    width: 38%;
+}
+.footer{
+    margin-top: 300px;
+    background-color: #3D3D3D;
+    height: 250px;
+}
+.footer p{
+    color: white;
+    position: relative;
+    left: 30%;
+}
+.footer .footer-img{
+    margin-top: 50px;
+}
+

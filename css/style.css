@@ -1,10 +1,18 @@
 body{
     background-color: black;
+    font-family: "poppins";
+    margin: 0px;
+    padding: 0px;
 }
+
+
+
+/* Nav Bar */
+
 .header .img-header{
-    width: 15%;    
+    width: 25%;    
     float: left;
-    margin-top: -2%;
+    margin-top: -5%;
 }
 .header{
     margin-top: 40px;
@@ -12,45 +20,344 @@ body{
 .container ul li{
     margin-right: 70px;
 }
-.podcasteur{
-    margin-top: 10%;
-    margin-left: 9%;
-}
-.podcasteur .margin{
-    margin-bottom: 30%;
-}
-.podcasteur img{
-    border-radius: 15%;
-    border: 2px solid white;
-}
-@media (max-width: 767px){
-    .podcasteur img{
-        width: 90%;
-        margin-bottom: 5%;
-    }
+.container ul li a:hover{
+    border:1px solid #27A4DB;
 }
 @media (max-width: 992px){
-    .podcasteur img{
-        margin-bottom: 20%;
+    .header .img-header{
+        width: 29%;
+        float: left;
+        margin-top: -6%;
+        margin-left: 24px;
     }
 }
-.btn-primary{
-    position: relative;
-    left: 31%;
-    top: 100px;
-    width: 38%;
+
+ /* Section 1 */
+#title  {
+    color: #FFCD1E;
+    letter-spacing: 20px;
+    text-align: center; 
+    margin-top: 10%; 
+    font-size: 69px;
 }
-.footer{
-    margin-top: 300px;
-    background-color: #3D3D3D;
-    height: 250px;
-}
-.footer p{
-    color: white;
-    position: relative;
-    left: 30%;
-}
-.footer .footer-img{
-    margin-top: 50px;
+@media (max-width: 992px){
+    #title {
+        font-size: 30px;
+        letter-spacing: 9px;
+    }
 }
 
+/* container Albums */
+#Al {
+    border-radius: 70px;
+    border: 3px solid #27A4DB;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    
+}
+
+.Albums {
+    text-align: center;
+    display: flex;
+    margin-left: 20%;
+}
+
+.Albums p {
+    color: white;
+    text-align: center;
+}
+.Albums .img-albums {
+    text-align: center;
+    margin-top: 10%;
+    width: 280px;
+    height: 280px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-bottom: 10%;
+    
+}
+
+@media (max-width: 992px){
+    #Al{
+        width: 67%;
+        text-align: center;
+        margin-left: 15%;
+    
+
+    }
+   
+    .Albums .img-albums {
+        width: 200px;
+        height: 200px;
+    }
+    .Albums {
+        margin-left: 10%;
+    }
+}
+
+
+
+/* Section 2 */
+.section2 {
+    background-image: url('man-yelleow.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Add {
+    border-radius: 60px;
+    border: 2px solid #F4DA07;
+    background-color: black;
+    display: flex;
+    margin: 4%;
+    width: 30%;
+}
+.Add h5 {
+    color: white;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 3%;
+
+}
+
+.img-man img{
+    width: 350px;
+    height: 570px;
+}
+
+.form-group label{
+    color: white;
+    text-align: start;
+    font-size: 22px;
+
+}
+.form-group input[type = "text"]{
+    border-radius: 24px;
+    height: 70px;
+    width: 730px;
+    border: 1px solid #F4DA07;
+}
+
+
+.btn-primary {
+    background-color: black;
+    color: white;
+    border: 1px solid #F4DA07;
+    text-align: center;
+    width: 130px;
+    height: 50px;
+    font-size: 27px;
+    border-radius: 20px;
+    margin-left: 40%;
+
+
+}
+
+
+@media (max-width: 992px){
+    .Add {
+        width: 60%;
+    }
+    .Add h5 {
+        margin-top: 2%;
+        font-size: 15px;
+        margin-left: 14%;
+    }
+    .btn-primary{
+        text-align: center;
+        font-size: 15px;
+        width: 100px;
+        height: 30px;
+        margin-left: 35%;
+
+    }
+    .form-group input[type = "text"]{
+        
+        height: 50px;
+        width: 430px;
+        
+    }
+    .form-group label{
+        margin-left: 3%;
+        font-size: 15px;
+    
+    }
+    .img-man img{
+        width: 320px;
+        height: 550px;
+        margin-left: 13%;
+        margin-top: 7%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============
+===============
+= PAGE ALBUMS=
+===============
+===============*/
+
+/* Section 1 */
+.text-About1 {
+    
+    color: white;
+}
+
+
+
+.img-About img{
+    width: 450px;
+    height: 300px;
+    border-radius: 107px;
+}
+
+.text-About1 .tit1 {
+    font-family: 'Monotone';
+}
+.text-About1 .tit2 {
+    font-family: 'Indie Flower';
+}
+
+
+@media (max-width: 992px){
+    .text-About1 {
+        justify-content: center;
+        text-align: center;
+    }
+    #second{
+        flex-direction: column-reverse;
+    }
+    .img-About img{
+        width: 350px;
+        height: 250px;
+        border-radius: 90px;
+        margin-left: 12%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================
+ FOOTER SECTION
+====================*/
+
+
+
+.footer {
+    background-color: #423F3F;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    padding: 4px;
+    margin-top: 100px;
+
+
+
+}
+.footer img{
+    width: 100%;
+}
+.copyright {
+   background-color: #423F3F;
+
+    text-align: center; 
+    width: 100%; 
+    color: white;
+   
+    margin-top: 30px;
+}
+.footer .col-sm-3{
+    margin-top: 5%;
+}
+.footer p {
+    color: white;
+    letter-spacing: 27%;
+}
+.footer h4 {
+    color: #27A4DB;
+}
+.footer a:hover{
+    color: #27A4DB;
+}
+.footer a {
+    display: flex;
+    
+}
+.footer .row {
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
+    align-items: flex-start;
+
+
+}
+
+.footer .row .col-sm-3 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    
+}
+
+
+
+
+@media (max-width: 992px){
+    .footer .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .footer .row .col-sm-3 {
+        justify-content: center;
+        align-items: center;
+    }
+    .footer {
+        justify-content: center;
+    }
+    .footer img {
+        width: 100%;
+        margin-left: 5%;
+    }
+}

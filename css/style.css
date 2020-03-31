@@ -84,6 +84,9 @@ body{
 }
 
 /* Section 2 */
+.form-form{
+    margin-top: 7%;
+}
 .section2 {
     background-image: url('man-yelleow.jpg');
     background-repeat: no-repeat;
@@ -118,7 +121,7 @@ body{
 }
 .form-group input[type = "text"]{
     border-radius: 24px;
-    height: 70px;
+    height: 60px;
     width: 730px;
     border: 1px solid #F4DA07;
 }

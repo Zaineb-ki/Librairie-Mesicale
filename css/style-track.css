@@ -46,7 +46,7 @@ body{
 }
 .like {
     border-radius: 100%;
-    width: 25.5px;
+    width: 25px;
     height: 25px;
     border: 1px solid #FFCD1E;
     display: inline-block;
@@ -55,14 +55,131 @@ body{
     color: #FFCD1E;
 }
 
+/* Responsive */
+
+@media (max-width: 992px){
+    .info{
+        display: inline-block;
+    }
+    .img-artist img{
+        border-radius: 50px ;
+        border: 1px solid white;
+        width: 200px;
+        height:200px;
+        text-align: center;
+    }
+    .info-desc {
+        margin-top: -54%;
+        margin-left: 79%;
+        line-height: 11px;
+        width: 100%;
+    }
+    .info-desc .name-of-album {
+        font-size: 20px;
+    }
+    .info-desc p {
+        font-size: 15px;
+    }
+    .info-desc strong {
+        letter-spacing: 5px;
+    }
+    .like {
+        width: 23px;
+        height: 23px;
+    }
+    .like i {
+        margin-top: 2px;
+    }
+    
+    
+}
+
+
+/* Iphone X */
+@media (max-width : 375px){
+    .info-desc {
+        margin-top: -54%;
+        margin-left: 67%;
+        line-height: 11px;
+        width: 42%;
+    }
+    .img-artist img {
+        margin-left: 4%;
+    
+    }
+}
+
+/* tracks table */
+.table {
+    border: 2px solid #FFCD1E;
+    margin-top: 10%;
+}
+
+.table th {
+    color: #877373;
+    font-size: 25px;
+    font-family: 'Indie Flower';
+}
+.table td {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+
+.audio-mp3 audio{
+    width: 80%;
+    margin-top: 4%;
+    color: #877373;
+}
 
 
 
 
 
+/* Add tracks */
+.section-Add .Add {
+    border-radius: 60px;
+    border: 2px solid #F4DA07;
+    background-color: black;
+    display: flex;
+    margin: 4%;
+    width: 30%;
+}
+.section-Add .Add h5 {
+    color: white;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 3%;
+
+}
 
 
+/* Responsive */
+@media (max-width: 992px){
+    .Add {
+        width: 60%;
+    }
+    .Add h5 {
+        margin-top: 2%;
+        font-size: 15px;
+        margin-left: 14%;
+    }
+}
 
+/* :Iphone X */
+@media (max-width : 375px){
+    .Add{
+     width: 65%;
+     justify-content: center;
+    }
+    .Add h5 {
+     margin-top: 2%;
+     font-size: 15px;
+     margin-left: 1%;
+    }
+}
 
 /*==================
  FOOTER SECTION

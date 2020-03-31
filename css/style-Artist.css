@@ -367,10 +367,14 @@ body{
        .white{
         position: relative;
         margin-top: 2%;
-        margin-left: 0%;
-        width: 105%;
+        margin-left: -2%;
+        width: 104%;
         height: 102%;
+    
        }
+       #forme-text{
+        margin-left: -3%;
+    }
       
 }
 

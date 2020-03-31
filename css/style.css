@@ -354,15 +354,20 @@ body{
     bottom: 0px;
     padding: 4px;
     margin-top: 100px;
+
+
+
 }
 .footer img{
     width: 100%;
 }
 .copyright {
    background-color: #423F3F;
+
     text-align: center; 
     width: 100%; 
     color: white;
+   
     margin-top: 30px;
 }
 .footer .col-sm-3{
@@ -385,6 +390,7 @@ body{
 .footer .row {
     display: flex;
     flex-wrap: nowrap;
+    /* justify-content: center; */
     align-items: flex-start;
 
 
@@ -431,8 +437,8 @@ body{
     }
 }
 
-/* Iphone X */
 
+/* Iphone X */
 @media (max-width : 375px){
     .footer img {
         width: 60%;

@@ -6,6 +6,10 @@ body{
 }
 
 /* Section 1 */
+#Art {
+    
+    margin-top: -6%;
+}
 #Artistpart{
     margin-top: 10%;
 }
@@ -220,12 +224,12 @@ body{
     border-radius: 60px;
     background-color: #F4DA07;
     display: flex;
-    /* margin: 4%; */
     width: 30%;
-    margin-left: 33%;
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: -7%;
 }
 .Add-albums h5 {
-    /* color: white; */
     text-align: center;
     margin-left: 10%;
     margin-top: 3%;
@@ -245,11 +249,11 @@ body{
     border-radius: 6%;
     border: 1px solid #FFCD1E;
     width: 67%;
-    height: 451pt;
+    height: 378pt;
     opacity: 70%;
     position: absolute;
     margin-left: 15%;
-    margin-top: -60%;
+    margin-top: -56%;
 }
 .title-Add h4 {
     background-color: #F4DA07;
@@ -262,12 +266,13 @@ body{
 .form-group label{
     color: black;
     text-align: start;
-    font-size: 22px;
+    font-size: 18px;
+    margin-bottom: -1%;
 
 }
 .form-group input[type = "text"]{
     border-radius: 24px;
-    height: 70px;
+    height: 60px;
     width: 730px;
     border: 2px solid #F4DA07;
     opacity: none !important;
@@ -284,11 +289,11 @@ body{
     color: black;
     border: 1px solid #F4DA07;
     text-align: center;
-    width: 130px;
-    height: 50px;
-    font-size: 27px;
+    width: 86px;
+    height: 33px;
+    font-size: 17px;
     border-radius: 20px;
-    margin-left: 40%;
+    margin-left: 46%;
     background-color: #F4DA07;
 
 
@@ -304,7 +309,7 @@ body{
     }
     .white{
         position: relative;
-        margin-top: 0%;
+        margin-top: 4%;
         margin-left: 0%;
         width: 100%;
         height: 102%;
@@ -345,35 +350,35 @@ body{
 
 /* Iphone X */
 @media (max-width: 375px){
-    .Add-albums{
-        width: 65%;
-        justify-content: center;
-        margin-left: 17%;
+         .Add-albums{
+            width: 65%;
+            justify-content: center;
+            margin-left: 17%;
        }
        .Add-albums h5 {
-        margin-top: 2%;
-        font-size: 15px;
-        margin-left: -4%;
-        margin-bottom: 4%;
+            margin-top: 2%;
+            font-size: 15px;
+            margin-left: -4%;
+            margin-bottom: 4%;
        }
        .form-group input[type = 'text']{
-        height: 50px;
-        width: 345px;
+            height: 50px;
+            width: 345px;
        }
        .img-man img {
-        margin-left: 4%;
+            margin-left: 4%;
         
        }
        .white{
-        position: relative;
-        margin-top: 2%;
-        margin-left: -2%;
-        width: 104%;
-        height: 102%;
-    
+            position: relative;
+            margin-top: 10%;
+            margin-left: -2%;
+            width: 104%;
+            height: 95%;
+        
        }
        #forme-text{
-        margin-left: -3%;
+             margin-left: -3%;
     }
       
 }

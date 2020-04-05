@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteDance | Adele</title>
+
+     <!-- Style Bootstrap  -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+     <!-- Main style sheet -->
+    <link rel="stylesheet" href="css\style-track.css">
+    <link rel="stylesheet" href="css/adel.css">
+
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="img/X-icone.png" type="image/x-icon">
+
+
+     <!-- src script Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+
+     <!-- Font awesome -->
+     <script src="https://kit.fontawesome.com/f84ba90e3b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- navbar-menu -->
+
+<nav class="navbar-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg" style="background-color:black;">
+                    <a class="navbar-brand" href="home.html" style="width: 55%;" >
+                        <img src="img/logo.png" alt="" srcset="" style="width: 40%;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: 1px solid #27A4DB; background-color: transparent !important; color: white;">
+                      <span > <i class="fas fa-bars" style="color: #27A4DB;"></i></span>
+                    </button>
+                 
+                   <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent" >
+                     <ul class="navbar-nav mr-auto" style="justify-content: space-evenly;">
+                       <li class="nav-item active">
+                         <a class="nav-link" href="home.html" style="color: white;">Home</a>
+                       </li> 
+                       <li class="nav-item">
+                         <a class="nav-link" href="About.html" style="color: white;">About</a>
+                       </li>
+                       
+                      
+                     </ul>
+                     <form class="form-inline my-2 my-lg-0" >
+                      
+                       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                     </form>
+                   </div>
+                 </nav>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Section 1 -->
+
+<br>
+
+<div class="info">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="img-artist">
+                <img src="img/Adele25.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="info-desc">
+                    <p class="name-of-album"> Album</p>
+                    
+                    <h3>25</h3>
+                    
+                    <p>par <strong>Adele</strong></p>
+                    
+                    <p>2015</p>
+                    <div class="like">
+                       <center>
+                        <i class="far fa-heart" ></i>
+                       </center>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- table tracks -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                   
+                  </tr>
+                </thead>
+                <tbody id="show">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Hello
+                        <audio id="myAudio">
+                            <source src="1.mp3" type="audio/mpeg">
+                          </audio>
+                          <button onclick="playAudio()" type="button" class="btn btn-light play1">Play Audio</button>
+                          <button onclick="pauseAudio()" type="button" class="btn btn-light pause1">Pause Audio</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>I Miss You</td>
+                    <audio id="myAudio2">
+                        <source src="2.mp3" type="audio/mpeg">
+                      </audio>
+                      <button onclick="playAudio2()" type="button" class="btn btn-light play2">Play Audio</button>
+                      <button onclick="pauseAudio2()" type="button" class="btn btn-light pause2">Pause Audio</button>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Remedy</td>
+                    <audio id="myAudio3">
+                        <source src="3.mp3" type="audio/mpeg">
+                      </audio>
+                      <button onclick="playAudio3()" type="button" class="btn btn-light play3">Play Audio</button>
+                      <button onclick="pauseAudio3()" type="button" class="btn btn-light pause3">Pause Audio</button>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Add Tracks -->
+<div class="section-Add">
+    <div class="container">
+        <center>
+            <div class="row">
+                <div class="col-12">
+                    
+                        <div class="Add">
+                            <h5>ADD YOUR FAVORIT TRACK</h5>
+                        </div>
+                
+                    
+                </div>
+            </div>
+         </center>
+    </div>
+</div>
+
+<!-- Forme -->
+<div class="container-form-add-tracks">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+             <div class="white">
+                 <br>
+                <div class="container" style="display: flex;" id="forme-text">
+                    <div class="row">
+                        <div class="col-12">
+                            <form>
+                                <div class="form-group">
+                                  <label>Title Of Track</label>
+                                  <br> <br>
+                                  <input type="text" class="form-control" id="TitleOfT">
+                                  
+                                </div>
+            
+                                <div class="form-group">
+                                  <label>URL mp3</label>
+                                  <br> <br>
+                                  <input type="text" class="form-control" id="Url">
+                                </div>
+                               <br>
+                                <input type="button" class="btn-primary" value="add" onclick="addTrack()">
+                              </form>
+                        </div>
+                    </div>
+                 </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+        
+        
+        
+
+<!-- section Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="img/logo-footer.png" alt="" srcset="" >
+            </div>
+            <div class="col-sm-3">
+                <p>Who doesn’t love Music ?
+                    We got you covered with a collection of the best Music in the world.
+                    Tune in and make your ride, travel, walk, or workout more enjoyable!</p>
+            </div>
+            <div class="col-sm-3">
+                
+                
+                <h4>Company</h4>
+                <div><a href="home.html" style="color: white;">Home</a></div>
+                <div><a href="About.html" style="color: white;">About us</a></div>
+                
+            </div>
+            <div class="col-sm-3">
+                <h4>Contact Us</h4>
+                <div style="color: white;"> Phone : +33 568 34 56 </div>
+                <div  style="color: white;"> Email : ByteDance@outlook.fr </div>
+                <br> 
+                
+                    <div class="font">
+                        <li style="display: inline-block; color: #27A4DB;"><i class="fab fa-facebook-f"></i></li>
+                        <li style="display: inline-block; color: #27A4DB;"><i class="fab fa-twitter"></i></li>
+                        <li style="display: inline-block; color: #27A4DB;"><i class="fab fa-instagram"></i></li>
+                        <li style="display: inline-block; color: #27A4DB;"><i class="fab fa-youtube"></i></li>
+                    </div>
+                
+               
+            </div>
+        </div>
+        <br>
+        <p class="copyright" >&copy; 2020 | ByteDance | Live Music,  All Right Reserved</p>
+    
+   
+
+    </div>
+</div>
+<!-- End Footer -->
+
+<script>
+
+function addTrack(){
+    var titlrOfTrack = document.getElementById('TitleOfT').value;
+var musicUrl = document.getElementById('Url').value;
+
+var show = document.getElementById('show');
+show.innerHTML += "<tr>" + 
+                    "<th scope='row'>4</th>" +
+                    "<td>" + titlrOfTrack +
+                        "<audio id='myAudio4'>" +
+                            "<source src=" + musicUrl + "type='audio/mpeg'>" +
+                        "</audio>" +
+                        "<button onclick='playAudio()' type='button' class='btn btn-light play1' style ='left: 62%'>Play Audio</button>" +
+                        "<button onclick='pauseAudio()' type='button' class='btn btn-light pause1'>Pause Audio</button>" +
+                    "</td>" +
+                    "</tr>"
+}
+
+//                  <tr>
+//                     <th scope="row">1</th>
+//                     <td>Hello
+//                         <audio id="myAudio">
+//                             <source src="1.mp3" type="audio/mpeg">
+//                           </audio>
+//                           <button onclick="playAudio()" type="button" class="btn btn-light play1">Play Audio1</button>
+//                           <button onclick="pauseAudio()" type="button" class="btn btn-light pause1">Pause Audio1</button>
+//                     </td>
+//                   </tr>
+
+var x = document.getElementById("myAudio"); 
+var y = document.getElementById("myAudio2"); 
+var z = document.getElementById("myAudio3"); 
+
+function playAudio() { 
+  x.play(); 
+  y.pause();
+  z.pause();
+}
+
+function pauseAudio() { 
+  x.pause(); 
+  y.pause();
+  z.pause();
+} 
+
+function playAudio2() { 
+  y.play(); 
+  x.pause(); 
+  z.pause();
+} 
+
+function pauseAudio2() { 
+  y.pause(); 
+  x.pause(); 
+  z.pause();
+} 
+
+function playAudio3() { 
+    y.pause(); 
+    x.pause(); 
+    z.play();
+  } 
+  
+  function pauseAudio3() { 
+    y.pause(); 
+    x.pause(); 
+    z.pause();
+  } 
+
+
+
+</script>
+
+</body>
+</html>

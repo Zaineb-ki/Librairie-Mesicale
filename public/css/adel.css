@@ -1,0 +1,37 @@
+.btn-light{
+
+}
+
+.play1{
+position: relative;
+left: 63%;
+}
+
+.pause1{
+position: relative;
+left: 67%;
+}
+
+.play2{
+position: relative;
+left: 72%;
+top: 286px;
+}
+
+.pause2{
+    position: relative;
+    left: 76%;
+    top: 284px;
+}
+
+.play3 {
+    position: relative;
+    left: 52%;
+    top: 347px;
+}
+
+.pause3 {
+    position: relative;
+    left: 56%;
+    top: 347px;
+}
